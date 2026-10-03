@@ -30,6 +30,6 @@ if (contactForm) {
         );
 
         window.location.href =
-            `mailto:contact@phantomsdevelopment.com?subject=${subject}&body=${body}`;
+            `mailto:phantom-csg1246@outlook.com?subject=${subject}&body=${body}`;
     });
 }
