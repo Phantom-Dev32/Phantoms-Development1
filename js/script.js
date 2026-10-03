@@ -16,7 +16,6 @@ if (contactForm) {
         const data = new FormData(contactForm);
 
         const name = data.get('name');
-        const email = data.get('email');
         const service = data.get('service');
         const message = data.get('message');
 
@@ -26,12 +25,11 @@ if (contactForm) {
 
         const body = encodeURIComponent(
             `Name: ${name}\n` +
-            `Email: ${email}\n` +
             `Service: ${service}\n\n` +
             `Project details:\n${message}`
         );
 
         window.location.href =
-            `mailto:phantom-csg1246@outlook.com?subject=${subject}&body=${body}`;
+            `mailto:contact@phantomsdevelopment.com?subject=${subject}&body=${body}`;
     });
 }
